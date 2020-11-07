@@ -10,7 +10,7 @@ data class Task(
         private val rnd = Random(42)
 
         fun generateTask(): Task {
-            return Task(rnd.nextLong(100, 500), rnd.nextInt(0, 10))
+            return Task(rnd.nextLong(50, 200), rnd.nextInt(1, 5))
         }
     }
 }

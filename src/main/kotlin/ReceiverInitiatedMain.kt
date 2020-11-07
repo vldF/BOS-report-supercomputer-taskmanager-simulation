@@ -17,7 +17,7 @@ fun main() {
     flooder.start()
 
     while (true) {
-        println(cluster.nodes.withIndex().joinToString(separator = ", ") { "${it.index}: ${it.value.nodeLoad}" })
+        println(cluster.nodes.withIndex().joinToString(separator = ", ") { "${it.index}: ${it.value.loadedTasks.size}" })
         Thread.sleep(10)
     }
 
